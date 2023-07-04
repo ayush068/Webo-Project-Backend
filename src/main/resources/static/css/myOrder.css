@@ -266,3 +266,62 @@ h2{
 .progress-bar {
     background-color: #2F8D46
 }
+
+.rateUs-contents{
+    text-align: center;
+    align-items: center;
+}
+.rateUs-contents p i
+{
+    color: bisque;
+    cursor: pointer;
+}
+#rate-btn
+{
+    color: black;
+}
+.rateing-contents
+{
+    border: 1px solid black;
+    display: none;
+}
+.reveiw-contents
+{
+    align-items: center;
+}
+.reveiw-contents .form-floating
+{
+    width: 50%;
+    height: 80%;
+    border-radius: 5px;
+}
+.reveiw-contents .form-floating textarea
+{
+    background-color: #F1F1F1;
+}
+.reveiw-contents .reveiw-imgs
+{
+    width: 50%;
+    height: 80%;
+}
+.reveiw-imgs
+{
+    align-items: center;
+    border-radius: 5px;
+    background-color: #F1F1F1;
+}
+.reveiw-imgs .productImg
+{
+    width: 150px;
+    height: 100px;
+}
+.review-submit
+{
+    width: 100%;
+    text-align: center;
+}
+.review-submit button
+{
+    width: 30%;
+    font-size: 17px;
+}

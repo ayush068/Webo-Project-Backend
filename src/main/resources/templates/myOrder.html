@@ -117,25 +117,54 @@
         <!-- Lat orders Contents -->
         <div class="d-flex flex-column last-orders mt-5">
             <h4>Last Orders</h4>
-            <div class="d-flex  justify-content-evenly flex-wrap orders">
-                <div class="productImg">
-                    <img src="../static/f3.jpg"></img>
+            <div class="orders d-flex flex-column gap-3">
+                <p>product delivered on</p>
+                <div class="d-flex  justify-content-evenly flex-wrap">
+                    <div class="productImg">
+                        <img src="../static/f3.jpg"></img>
+                    </div>
+                    <div class="d-flex flex-column gap-3 ">
+                        <a href="#"><b>MIRAGE CEILING FAN</b></a>
+                        <p class="lh-sm">1200MM HIGH SPEED, 3 Blade, SMOKE BROWN
+                            (5 YEARS WARRANTY)
+                        </p>
+                        <p>
+                            <b>Rs. 1700/- </b>
+                            <span class="px-3"> 2000/-</span>
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column justify-content-evenly">
+                        <button type="button" class="btn btn-warning">Return</button>
+                        <button type="button" class="btn btn-success">Place Order!</button>
+                    </div>
                 </div>
-                <div class="d-flex flex-column gap-3 ">
-                    <a href="#"><b>MIRAGE CEILING FAN</b></a>
-                    <p class="lh-sm">1200MM HIGH SPEED, 3 Blade, SMOKE BROWN
-                        (5 YEARS WARRANTY)
-                    </p>
-                    <p>
-                        <b>Rs. 1700/- </b>
-                        <span class="px-3"> 2000/-</span>
-                    </p>
+                <div class="d-flex justify-content-center flex-column rateUs-contents gap-3">
+                    <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></p>
+                    <button class="btn btn-outline-light" id="rate-btn" type="toggle">Rate This Product</button>
                 </div>
-                <div class="d-flex flex-column justify-content-evenly">
-                    <button type="button" class="btn btn-warning">Return</button>
-                    <button type="button" class="btn btn-success">Place Order!</button>
+                <div class="rateing-contents flex-column mx-2 py-2 px-2 gap-2" id="rating-contents">
+                    <div class="reveiw-contents d-flex gap-2">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Comments</label>
+                        </div>
+                        <div class="d-flex justify-content-center reveiw-imgs flex-wrap">
+                            <button class="btn btn-primary"><i class="bi bi-camera-fill"></i> ADD</button>
+                            <div class="productImg">
+                                <img src="../static/f1.png"></img>
+                            </div>
+                            <div class="productImg">
+                                <img src="../static/f1.png"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-submit">
+                        <button class="btn btn-success">Submit</button>
+                    </div>
                 </div>
             </div>
+            
         </div>
 
         <!-- Help Center Details-->
@@ -155,7 +184,8 @@
 
     </div>
 
-
+    <!-- Js FILE LINK -->
+    <script src="../static/js/myOrder.js"></script>
     <!-- BootStarp Script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

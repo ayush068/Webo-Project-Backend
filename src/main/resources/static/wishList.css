@@ -99,6 +99,7 @@ position: relative;
     }
 }
 
+/* Main Section */
 .containor{
 	display: flex;
 }

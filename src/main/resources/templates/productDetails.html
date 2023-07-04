@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+>
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- cart page css link -->
+    <!-- productDetailspage css link -->
     <link rel="stylesheet" href="../static/css/productDetailspage.css">
     <!-- BootStrap Icon Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -14,7 +16,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 
-	<title>productDetailsPage</title>
+    <title>productDetailsPage</title>
 </head>
 
 <body>
@@ -77,31 +79,256 @@
     </div>
     <!-- header end -->
 
-	<!-- productsBar_Names start -->
-	<div class="productsBar_Names d-flex justify-content-around py-2 border-bottom">
-		<a class="aTag" href="#">Electronic</a>
-		<a class="aTag" href="#">Large Home Appliances</a>
-		<a class="aTag" href="#">Small Home Appliances </a>
-		<a class="aTag" href="#">Gadgets</a>
-		<a class="aTag" href="#">Fashion</a>
-		<a class="aTag" href="#">Personal Care</a>
-	</div>
-	<!-- productsBar_Names end -->
+    <!-- productsBar_Names start -->
+    <!-- <div class="productsBarNames d-flex justify-content-around py-2 border-bottom">
+        <a class="aTag" href="#">Electronic</a>
+        <a class="aTag" href="#">Large Home Appliances</a>
+        <a class="aTag" href="#">Small Home Appliances </a>
+        <a class="aTag" href="#">Gadgets</a>
+        <a class="aTag" href="#">Fashion</a>
+        <a class="aTag" href="#">Personal Care</a>
+    </div> -->
+    <!-- productsBar_Names end -->
 
-<!-- main start -->
-<div class="container">
-	<div class="d-flex">
-		<div class="d-flex flex-column gap-1 pt-4" >
-		<div class="productImgDiv border"><img src="../static/f1.png" alt=""></div>
-		<div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
-		<div class="productImgDiv border"><img src="../static/f3.jpg" alt=""></div>
-		<div class="productImgDiv border"><img src="../static/f4.png" alt=""></div>
-	</div>
-	<div>
-		<img src="">
-	</div>
-	<div></div>
-	<div></div>
+    <!-- main start -->
+    <div class=" forDesktop "><div class="container-fluid  mainDiv d-flex flex-wrap gap-4 pt-4 ">
+
+        <div class="leftSide col d-flex justify-content-around ">
+            <div class="smallImgs d-flex   gap-1 ">
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            </div>
+            <div class="d-flex justify-content-around ps-1">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="mainImg">
+                        <img src="../static/f2.png">
+
+                    </div>
+                    <button type="button" class="btn btn-success ">Add to Cart</button>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-center">
+                    <i class="bi bi-heart bg-info-subtle heart rounded-circle"></i>
+                    <!-- <i class="bi bi-heart-fill bg-info-subtle heart rounded-circle"></i> -->
+                    <p class="star px-2 py-1 m-2 mt-3 text-white">3.5 <i
+                            class="bi bi-star-fill text-warning fw-bold"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col rightSide pb-4">
+            <h4 class="fw-semibold">MIRAGE CEILING FAN </h4>
+            <p class="lh-2 mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore et corrupti.</p>
+            <p><span class="fw-bold fs-4">Rs. 1700/- </span><span class="fw-lighter text-body-tertiary"> 2000/-</span></p>
+            <!-- Product Details  start -->
+
+            <h6 class="fw-semibold border ps-2 py-2">Product Details <i class="bi bi-caret-right-fill"></i></h6>
+            <div class="pb-2">
+            <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+                Description
+            </h6>
+            <p class="pt-2 lh-2">You can enjoy cool and refreshing air even on hot summer days with the help of the Bajaj Crest Neo Ceiling Fan. With its high speeds of up to 340 RPM and an air delivery rate of up to 205 cubic metres per minute, this ceiling fan can keep your room well-ventilated at all times. Equipped with 1200 mm high-quality ribbed aluminium blades, this ceiling fan ensures excellent air delivery and long-lasting performance.</p>
+            <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+                Specifications
+            </h6>
+            <p class="pt-2 lh-2">Model Name : Crest Neo<br>
+                Brand Color : Brown<br>
+                Number of Blades : 3<br>
+                Pack of : 1<br>
+                Reversible Rotation : No<br>
+                Remote : No<br>
+                Power Requirement : AC 230 V, 50 Hz<br>
+                Blade Material : Aluminium.
+            </p>
+           </div>
+           <!-- Ratings & Reviews start -->
+           <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+            Ratings & Reviews
+        </h6>
+     <p> <h3 class="star px-2 py-1 m-2 mt-3 text-white d-inline">3.5 <i
+        class="bi bi-star-fill text-warning fw-bold"></i></h3>170 ratings and 19 reviews</p>
+     <h6 class="fw-semibold">Customer Reviews -</h6>
+     <!-- Reviews box -->
+
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+        </div>
+    </div></div>
+
+    <div class="forMobile "><div class="container d-flex flex-wrap gap-4 pt-4 ">
+
+        <div class=" col d-flex flex-wrap justify-content-around gap-4">
+            <div class="smallImgs d-flex   gap-1 ">
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+                <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            </div>
+            <div class="d-flex justify-content-around">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="mainImg">
+                        <img src="../static/f2.png">
+
+                    </div>
+                    <button type="button" class="btn btn-success ">Add to Cart</button>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-center">
+                    <i class="bi bi-heart bg-info-subtle heart rounded-circle"></i>
+                    <!-- <i class="bi bi-heart-fill bg-info-subtle heart rounded-circle"></i> -->
+                    <p class="star px-2 py-1 m-2 mt-3 text-white">3.5 <i
+                            class="bi bi-star-fill text-warning fw-bold"></i></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4 class="fw-semibold">MIRAGE CEILING FAN </h4>
+            <p class="lh-2 mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum labore et corrupti.</p>
+            <p><span class="fw-bold fs-4">Rs. 1700/- </span><span class="fw-lighter text-body-tertiary"> 2000/-</span></p>
+            <!-- Product Details  start -->
+
+            <h6 class="fw-semibold border ps-2 py-2">Product Details <i class="bi bi-caret-right-fill"></i></h6>
+            <div class="pb-2">
+            <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+                Description
+            </h6>
+            <p class="pt-2 lh-2">You can enjoy cool and refreshing air even on hot summer days with the help of the Bajaj Crest Neo Ceiling Fan. With its high speeds of up to 340 RPM and an air delivery rate of up to 205 cubic metres per minute, this ceiling fan can keep your room well-ventilated at all times. Equipped with 1200 mm high-quality ribbed aluminium blades, this ceiling fan ensures excellent air delivery and long-lasting performance.</p>
+            <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+                Specifications
+            </h6>
+            <p class="pt-2 lh-2">Model Name : Crest Neo<br>
+                Brand Color : Brown<br>
+                Number of Blades : 3<br>
+                Pack of : 1<br>
+                Reversible Rotation : No<br>
+                Remote : No<br>
+                Power Requirement : AC 230 V, 50 Hz<br>
+                Blade Material : Aluminium.
+            </p>
+           </div>
+           <!-- Ratings & Reviews start -->
+           <h6 class="fw-semibold border-bottom border-dark border-2 pt-2 pb-1 d-inline">
+            Ratings & Reviews
+        </h6>
+     <p> <h3 class="star px-2 py-1 m-2 mt-3 text-white d-inline">3.5 <i
+        class="bi bi-star-fill text-warning fw-bold"></i></h3>170 ratings and 19 reviews</p>
+     <h6 class="fw-semibold">Customer Reviews -</h6>
+     <!-- Reviews box -->
+
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+     <div class="border py-2 px-1">
+        <p><span class="h4 text-success fw-semibold">3.5 Star</span> Rama</p>
+        <div class=" d-flex gap-1 ">
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+            <div class="productImgDiv border"><img src="../static/f2.png" alt=""></div>
+        </div>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem, debitis rem.</p>
+     </div>
+        </div>
+    </div></div>
+<div class="container-fluid d-flex flex-column justify-center align-items-center pt-4">
+    <h2 class="border w-100 text-center">Similar Product</h2>
+    <card><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis quasi laboriosam dolor velit aut nostrum rerum sit ullam, aliquam nemo nam, accusantium itaque repellendus eos repudiandae cumque provident cum impedit.</p></card>
+
+
+
+  <div class="container">
+    <div class="row justify-content-around">
+      <div class="col">
+        <div class="product-cart">
+          <img src="../static/f3.jpg" alt="Product 1">
+          <p class="brand"><span class="fw-semibold">Bajaj </span><span>Electric Induction 2000w.</span></p>
+         <div class="d-flex justify-content-around pt-2"><div class="price">Rs.20/-</div>
+          <div class="discount">20% off</div></div>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-cart">
+          <img src="../static/f3.jpg" alt="Product 1">
+          <p class="brand"><span class="fw-semibold">Bajaj </span><span>Electric Induction 2000w.</span></p>
+         <div class="d-flex justify-content-around pt-2"><div class="price">Rs.20/-</div>
+          <div class="discount">20% off</div></div>
+
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="product-cart">
+          <img src="../static/f3.jpg" alt="Product 1">
+          <p class="brand"><span class="fw-semibold">Bajaj </span><span>Electric Induction 2000w.</span></p>
+         <div class="d-flex justify-content-around pt-2"><div class="price">Rs.20/-</div>
+          <div class="discount">20% off</div></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 
@@ -109,10 +336,15 @@
 
 
 
-
-
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

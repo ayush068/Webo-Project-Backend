@@ -6,11 +6,13 @@ const forgotPasswordLink = document.getElementById("forgot-password-link");
 function loginValidateForm()
 {
     loginclearError();
+    
     var loginFormValidation = true;
-    var pNumber = document.forms["lform"]["lpnumber"].value;
-    var lPassword = document.forms["lform"]["lpass"].value;
+    var pNumber = document.forms["lform"]["mobile"].value;
+    var lPassword = document.forms["lform"]["password"].value;
     if(pNumber.length != 10)
     {
+        
         LoginSetError("login-phone", "Phone number is not valid");
         loginFormValidation = false;
     }

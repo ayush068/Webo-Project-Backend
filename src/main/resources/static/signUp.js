@@ -79,11 +79,11 @@ function validateForm() {
     clearError();
     var formvalidation = true;
 
-    var name = document.forms["rform"]["rname"].value;
-    var pNumber = document.forms["rform"]["rnumber"].value;
-    var remail = document.forms["rform"]["remail"].value;
-    var password = document.forms["rform"]["rpass"].value;
-    var confirmPassword = document.forms["rform"]["rcpass"].value;
+    var name = document.forms["rform"]["Name"].value;
+    var pNumber = document.forms["rform"]["mobile"].value;
+    var remail = document.forms["rform"]["email"].value;
+    var password = document.forms["rform"]["password"].value;
+    var confirmPassword = document.forms["rform"]["confirmPassword"].value;
     // to check given name is goning to be more than a 5
 
   if (name.length < 3) {
@@ -109,7 +109,8 @@ function validateForm() {
         setError("register-email","Email is invalid");
         formvalidation = false;
 
-        }else if(remail.lenght==0){
+        }
+    else if(remail.lenght==0){
             setError("register-email","");
             formvalidation = false;
         }

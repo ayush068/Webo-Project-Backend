@@ -1,0 +1,35 @@
+/* Custom styles for your eCommerce website */
+
+/* Header styles */
+header {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Additional styles */
+/* Add your additional custom styles here */

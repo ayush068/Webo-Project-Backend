@@ -1,0 +1,55 @@
+body,
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* header css */
+a{
+	text-decoration: none;
+	color:#3E3E40;
+	font-size: larger;
+}
+p{
+    margin-bottom: 0px;
+}
+.navHeader{
+    padding: 0px 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 1rem auto;
+
+}
+.logoForWebsite{
+    width: 5rem;
+}
+
+.aboutUs-content
+{
+    /* background-image: url("../aboutus_contactUs_page-bg.jpg");
+    background-size: 100%;
+    background-position: center; */
+    width: 70%;
+    padding: 2rem;
+    margin-top: 4rem; 
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+.aboutUs-content h1
+{
+    border-bottom: 2px solid black;
+    display: inline;
+}
+.aboutUs-p
+{
+    line-height: 2rem;
+    margin: 1.5rem auto;
+}
+#logo-img
+{
+    width: 15rem;
+    background-color: black;
+    border-radius: 5px;
+}

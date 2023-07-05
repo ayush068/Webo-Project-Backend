@@ -148,7 +148,7 @@ h2{
     text-align: center;
     position: relative;
 }
-  
+
 #form fieldset {
     background: white;
     border: 0 none;
@@ -158,15 +158,15 @@ h2{
     margin: 0;
     position: relative
 }
-  
+
 .finish {
     text-align: center
 }
-  
+
 #form fieldset:not(:first-of-type) {
     display: none
 }
-  
+
 #form .previous-step, .next-step {
     width: 100px;
     font-weight: bold;
@@ -178,33 +178,33 @@ h2{
     margin: 10px 5px 10px 0px;
     float: right
 }
-  
+
 .form, .previous-step {
     background: #616161;
 }
-  
+
 .form, .next-step {
     background: #2F8D46;
 }
-  
+
 #form .previous-step:hover,
 #form .previous-step:focus {
     background-color: #000000
 }
-  
+
 #form .next-step:hover,
 #form .next-step:focus {
     background-color: #2F8D46
 }
-  
+
 .text {
     color: #2F8D46;
     font-weight: normal
-}  
+}
 #progressbar .active {
     color: #2F8D46
 }
-  
+
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
@@ -213,23 +213,23 @@ h2{
     position: relative;
     font-weight: 400
 }
-  
+
 #progressbar #step1:before {
     content: ""
 }
-  
+
 #progressbar #step2:before {
     content: ""
 }
-  
+
 #progressbar #step3:before {
     content: ""
 }
-  
+
 #progressbar #step4:before {
     content: ""
 }
-  
+
 #progressbar li:before {
     width: 50px;
     height: 50px;
@@ -242,7 +242,7 @@ h2{
     margin: 0 auto 10px auto;
     padding: 2px
 }
-  
+
 #progressbar li:after {
     content: '';
     width: 100%;
@@ -253,16 +253,16 @@ h2{
     top: 25px;
     z-index: -1
 }
-  
+
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: #2F8D46
 }
-  
+
 .progress {
     height: 20px
 }
-  
+
 .progress-bar {
     background-color: #2F8D46
 }
@@ -285,30 +285,28 @@ h2{
     border: 1px solid black;
     display: none;
 }
-.reveiw-contents
-{
-    align-items: center;
-}
+
 .reveiw-contents .form-floating
 {
-    width: 50%;
-    height: 80%;
+/* width: 100%; */
+
     border-radius: 5px;
 }
 .reveiw-contents .form-floating textarea
 {
-    background-color: #F1F1F1;
+    background-color: #eaf3fb;
 }
-.reveiw-contents .reveiw-imgs
+/* .reveiw-contents .reveiw-imgs
 {
-    width: 50%;
-    height: 80%;
-}
+
+   width: 100%;
+} */
 .reveiw-imgs
 {
     align-items: center;
     border-radius: 5px;
-    background-color: #F1F1F1;
+    background-color: #eaf3fb;
+
 }
 .reveiw-imgs .productImg
 {

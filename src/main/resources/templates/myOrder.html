@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,6 +15,7 @@
     <!-- Style Sheet Link -->
     <link rel="stylesheet" href="../static/css/myOrder.css">
 </head>
+
 <body>
     <!-- Header -->
 
@@ -32,7 +34,7 @@
             <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                 aria-labelledby="staticBackdropLabel">
                 <div class="offcanvas-header pe-4">
-    
+
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body ">
@@ -42,11 +44,11 @@
                 </div>
             </div>
             <!-- {/* search button for mobile end */} -->
-    
+
             <div class="dropdown-right ">
                 <button class="btn fs-5 p-0 dropdown-toggle profileToggle bi bi-person" type="button"
                     data-bs-toggle="dropdown">
-    
+
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2  bi-person"></i> My
@@ -55,11 +57,14 @@
                             Orders</a></li>
                     <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi bi-heart"></i>
                             Wishlist</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-emoji-smile"></i> Help
+                    <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-emoji-smile"></i>
+                            Help
                             Center</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-journal-check"></i>
+                    <li><a class="dropdown-item" href="#"><i
+                                class="bi iconInDropdown fw-bold pe-2 bi-journal-check"></i>
                             Terms,Policies</a></li>
-                    <li><a class="dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-box-arrow-left"></i>
+                    <li><a class="dropdown-item" href="#"><i
+                                class="bi iconInDropdown fw-bold pe-2 bi-box-arrow-left"></i>
                             Logout</a></li>
                 </ul>
             </div>
@@ -67,7 +72,7 @@
                 <BsCart3 />
                 <spam class="numberOnCart">0</spam>
             </a>
-    
+
         </div>
     </div>
 
@@ -90,12 +95,12 @@
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <button type="button" class="btn btn-danger">Cancel Order</i></button>
+                    <button type="button" class="btn btn-outline-danger">Cancel Order</i></button>
                 </div>
             </div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-sm-12 col-md-12 
+                    <div class="col-12 col-sm-12 col-md-12
                             col-lg-12 col-xl-12 text-center p-0 mt-1 mb-1">
                         <div class="px-0 pt-2 pb-0 mt-1 mb-1">
                             <form id="form">
@@ -118,7 +123,7 @@
         <div class="d-flex flex-column last-orders mt-5">
             <h4>Last Orders</h4>
             <div class="orders d-flex flex-column gap-3">
-                <p>product delivered on</p>
+                <p>product delivered on <span>10 june</span></p>
                 <div class="d-flex  justify-content-evenly flex-wrap">
                     <div class="productImg">
                         <img src="../static/f3.jpg"></img>
@@ -134,29 +139,35 @@
                         </p>
                     </div>
                     <div class="d-flex flex-column justify-content-evenly">
+                        <button type="button" class="btn btn-success mb-2">Reorder</button>
                         <button type="button" class="btn btn-warning">Return</button>
-                        <button type="button" class="btn btn-success">Place Order!</button>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center flex-column rateUs-contents gap-3">
-                    <p><i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i> <i class="bi bi-star-fill"></i></p>
+                    <p><i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i> </p>
                     <button class="btn btn-outline-light" id="rate-btn" type="toggle">Rate This Product</button>
                 </div>
-                <div class="rateing-contents flex-column mx-2 py-2 px-2 gap-2" id="rating-contents">
-                    <div class="reveiw-contents d-flex gap-2">
-                        <div class="form-floating">
+                <div class="container rateing-contents flex-column py-2 gap-2" id="rating-contents">
+                    <div class="row reveiw-contents d-flex justify-content-evenly gap-2">
+                        <div class="col-12 col-md-5 form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                                 style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Comments</label>
+                            <label for="floatingTextarea2"> Comments</label>
                         </div>
-                        <div class="d-flex justify-content-center reveiw-imgs flex-wrap">
-                            <button class="btn btn-primary"><i class="bi bi-camera-fill"></i> ADD</button>
+                        <div class="col-12 col-md-5 d-flex justify-content-center reveiw-imgs px-0 flex-wrap">
+                            <button class="btn btn-primary me-4"><i class="bi bi-camera-fill"></i> ADD</button>
+                            <!-- <input type="file" accept="image/*" capture="camera"> -->
                             <div class="productImg">
                                 <img src="../static/f1.png"></img>
                             </div>
                             <div class="productImg">
                                 <img src="../static/f1.png"></img>
                             </div>
+
                         </div>
                     </div>
                     <div class="review-submit">
@@ -164,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- Help Center Details-->
@@ -174,11 +185,11 @@
             </div>
             <div class="d-flex gap-3 customer-help">
                 <i class="bi bi-telephone-fill"></i>
-                <p>9999999999</p>
+                <p><a href="tel:+4733378901">+47 333 78 901</a></p>
             </div>
             <div class="d-flex gap-3 customer-help">
                 <i class="bi bi-envelope-at-fill"></i>
-                <p>justopro@gmail.com</p>
+                <p><a href="mailto:wobo4u.com">wobo4u.com</a></p>
             </div>
         </div>
 
@@ -189,4 +200,5 @@
     <!-- BootStarp Script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

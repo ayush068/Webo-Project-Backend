@@ -1,12 +1,15 @@
-a
-{
+.footer a{
     color: #3E3E40;
     text-decoration: none;
+}
+.footerATag
+{
     font-size: 20px;
 }
 .footer
 {
-    border: 1px solid black;
+    color: #3E3E40;
+    border: 1px solid  #3E3E40;
 }
 .fm-icon
 {

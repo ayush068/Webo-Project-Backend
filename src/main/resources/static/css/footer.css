@@ -9,7 +9,12 @@
 .footer
 {
     color: #3E3E40;
-    border: 1px solid  #3E3E40;
+   box-shadow: inset 1px 1px 3px #3e3e40;
+
+}
+.f-main
+{
+    border-bottom: 1px solid #3e3e40;
 }
 .fm-icon
 {
@@ -17,7 +22,7 @@
 }
 .f-links
 {
-    padding: 0 5px;
+    padding: 0 2px;
     align-items: center;
     border-radius: 5px;
     font-size: 15px;
@@ -40,13 +45,8 @@
 
 /* Meadia Query for Footer */
 @media only screen and (max-width: 600px){
-    .f-main
-    {
-        border-bottom: 1px solid black;
-    }
-    .footer{
-        border-bottom: none;
-    }
+
+
     .f-sub
     {
         flex-direction: column;

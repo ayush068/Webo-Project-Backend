@@ -15,7 +15,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home page</title>
 </head>
 
@@ -44,7 +50,7 @@
                 <div class="offcanvas-body ">
                     <div class="searchFildOffcanvas "><input type="search" class="searchBar w-100 "
                             placeholder=" Search for product brand and more"></input><span class="searchIcon">
-                                <i class="bi bi-search"></i>
+                            <i class="bi bi-search"></i>
                         </span></div>
                 </div>
             </div>
@@ -55,12 +61,12 @@
 
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="aTag dropdown-item" href="#"><i class="bi iconInDropdown fw-bold pe-2  bi-person"></i>
+                    <li><a class="aTag dropdown-item" href="../templates/"><i class="bi iconInDropdown fw-bold pe-2  bi-person"></i>
                             My
                             Profile</a></li>
-                    <li><a class="aTag dropdown-item" href="#"><i
+                    <li><a class="aTag dropdown-item" href="../templates/myOrder.html"><i
                                 class="bi iconInDropdown fw-bold pe-2 bi-box2-heart"></i> Orders</a></li>
-                    <li><a class="aTag dropdown-item" href="#"><i
+                    <li><a class="aTag dropdown-item" href="../templates/wishList.html"><i
                                 class="bi iconInDropdown fw-bold pe-2 bi bi-heart"></i>
                             Wishlist</a></li>
                     <li><a class="aTag dropdown-item" href="#"><i
@@ -113,61 +119,295 @@
 
     <!-- main start -->
     <!-- for mobile catogery bar start -->
-    <div class=" d-block d-sm-none categoryMenu mt-2 px-md-5 pb-2">
-    <div class=" d-flex justify-content-between align-items-baseline">
+    <div class=" d-block d-sm-none categoryMenu mt-2 px-md-5 pb-1">
+        <div class=" d-flex justify-content-between align-items-baseline">
 
-        <div class="text-center text-center px-1">
-            <div class="imgCategory"><img src="../static/LED TV.svg"></img></div>
-            <h4 class="categoryName">Electronic</h4>
+            <div class="text-center text-center px-1">
+                <div class="imgCategory"><img src="../static/LED TV.svg"></img></div>
+                <h4 class="categoryName" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample">Electronic</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasExampleLabel">Electronic</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item py-3" href="#">24” LED TV</a></li>
+                                <li><a class="dropdown-item py-3" href="#">32” LED TV</a></li>
+                                <li><a class="dropdown-item py-3" href="#">40”-43” LED TV</a></li>
+                                <li><a class="dropdown-item py-3" href="#">50” LED TV</a></li>
+                                <li><a class="dropdown-item py-3" href="#">55” LED TV</a></li>
+                                <li><a class="dropdown-item py-3" href="#">60” & Above LED TV</a></li>
+                            </ul>
+                        </div>
 
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="d-flex flex-column align-items-center pe-1">
+                <div class="imgCategory"><img src="../static/Large Home Appliances.svg"></img></div>
+
+                <h4 class="categoryName" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                    aria-controls="offcanvas">Large Home Appliances</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-.9" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasLabel">Large Home Appliances</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Refrigerator</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Single Door</a></li>
+                                <li><a class="dropdown-item" href="#">Double Door
+
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#"> Triple Door</a></li>
+                                <li><a class="dropdown-item" href="#">Side By Side</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Washing Machine</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Fully Automatic Front Load
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Semi Automatic Front Load
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Fully Automatic Top Load</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Air Conditioners</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Inverter AC
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Split AC
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Window AC</a></li>
+                                <li><a class="dropdown-item" href="#">Cooler
+                                </a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Micro Wave Oven </h5>
+                            <ul class="list-unstyled ">
+                                <li><a class="dropdown-item" href="#">Solo
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Grill
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Convection</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center pe-1">
+                <div class="imgCategory"><img src="../static/Small Home App..svg"></img></div>
+                <h4 class="categoryName" data-bs-toggle="offcanvas" href="#offcanvasL" role="button"
+                aria-controls="offcanvas">Small Home Appliances</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-.9" id="offcanvasL" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasLabel">Small Home Appliances</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Kitchen Appliances</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Mixer Juicer/Grinder</a></li>
+                                <li><a class="dropdown-item" href="#">Coffee maker
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Toaster</a></li>
+                                <li><a class="dropdown-item" href="#">Electric cooker</a></li>
+                                <li><a class="dropdown-item" href="#">Electric Kettle</a></li>
+                                <li><a class="dropdown-item" href="#">Hand blender</a></li>
+                                <li><a class="dropdown-item" href="#">Egg boiler</a></li>
+                                <li><a class="dropdown-item" href="#">Other</a></li>
+                               </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Electrical Appliances</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Fans
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Vacuum cleaner
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Irons</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Water Purifier</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">RO
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">UV
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">RO+</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Cook Tops & Hobbs</h5>
+                            <ul class="list-unstyled ">
+                                <li><a class="dropdown-item" href="#">induction
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">ceramic
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">gas</a></li>
+                            </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Utensils </h5>
+                            <ul class="list-unstyled ">
+                            <li><a class="dropdown-item" href="#">Kitchen Utensils</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center pe-1">
+                <div class="imgCategory"><img src="../static/Gadgets.svg"></img></div>
+                <h4 class="categoryName"data-bs-toggle="offcanvas" href="#offcanvasG" role="button"
+                aria-controls="offcanvas">Gadgets</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-.9" id="offcanvasG" aria-labelledby="offcanvasLabel">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasLabel">Gadgets</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="list-unstyled text-center">
+                            <li><a class="dropdown-item py-3" href="#">Smart Watch & Bands</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Head Sets</a></li>
+                            <li><a class="dropdown-item py-3" href="#">BT Speakers</a></li>
+                            <li><a class="dropdown-item py-3" href="#">Home Theatre</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+               <div class="d-flex flex-column align-items-center pe-1">
+                <div class="imgCategory"><img src="../static/Fashion.svg"></img></div>
+
+                <h4 class="categoryName"data-bs-toggle="offcanvas" href="#offcanvasF" role="button"
+                aria-controls="offcanvasExample">Fashion</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-.9" id="offcanvasF" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasLabel">Fashion</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Women Clothing</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                <li><a class="dropdown-item" href="#">Bottom wear
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Men Clothing</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                <li><a class="dropdown-item" href="#">Bottom wear
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Kids Clothing</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                <li><a class="dropdown-item" href="#">Bottom wear
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex flex-column align-items-center pe-1">
+                <div class="imgCategory"><img src="../static/personal Care.svg"></img></div>
+
+                <h4 class="categoryName"data-bs-toggle="offcanvas" href="#offcanvasP" role="button"
+                aria-controls="offcanvasExample">Personal Care</h4>
+                <div class="offcanvas offcanvas-start" tabindex="-.9" id="offcanvasP" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title border-bottom" id="offcanvasLabel">Personal Care</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Accessories</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Men Footwear</a></li>
+                                <li><a class="dropdown-item" href="#">Women Footwear</a></li>
+                                <li><a class="dropdown-item" href="#">Bags
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Wallet</a></li>
+                                <li><a class="dropdown-item" href="#">Belts</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Beauty</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Eye makeup</a></li>
+                                <li><a class="dropdown-item" href="#">Face makeup
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Lip makeup</a></li>
+                                <li><a class="dropdown-item" href="#">Body & Skin care</a></li>
+                                <li><a class="dropdown-item" href="#">Hair care</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Grooming</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Shaving Essentials</a></li>
+                                <li><a class="dropdown-item" href="#">Face & Body care
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Hair styling</a></li>
+                                </ul>
+                        </div>
+                        <div class="text-center border-bottom">
+                            <h5 class="fw-semibold mb-1">Jwellery</h5>
+                            <ul class="list-unstyled">
+                                <li><a class="dropdown-item" href="#">Jewellery Set</a></li>
+                                <li><a class="dropdown-item" href="#">Earrings
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">Mangalsutras</a></li>
+                                <li><a class="dropdown-item" href="#">Bangles</a></li>
+                                <li><a class="dropdown-item" href="#">Necklaces</a></li>
+                                <li><a class="dropdown-item" href="#">Rings</a></li>
+                                <li><a class="dropdown-item" href="#">Anklets</a></li>
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="d-flex flex-column align-items-center pe-1">
-            <div class="imgCategory"><img src="../static/Large Home Appliances.svg"></img></div>
-
-            <h4 class="categoryName">Large Home Appliances</h4>
-
-        </div>
-        <div class="d-flex flex-column align-items-center pe-1">
-            <div class="imgCategory"><img src="../static/Small Home App..svg"></img></div>
-            <h4 class="categoryName">Small Home Appliances</h4>
-
-
-        </div>
-        <div class="d-flex flex-column align-items-center pe-1">
-            <div class="imgCategory"><img src="../static/Gadgets.svg"></img></div>
-            <h4 class="categoryName">Gadgets</h4>
-
-
-        </div>
-        <div class="d-flex flex-column align-items-center pe-1">
-            <div class="imgCategory"><img src="../static/Fashion.svg"></img></div>
-
-            <h4 class="categoryName">Fashion</h4>
-
-
-        </div>
-        <div class="d-flex flex-column align-items-center pe-1">
-            <div class="imgCategory"><img src="../static/personal Care.svg"></img></div>
-
-            <h4 class="categoryName">Personal Care</h4>
-
-        </div>
-    </div>
     </div>
     <!-- for mobile catogery bar end -->
 
 
     <!-- for desktop catogery bar start-->
-    <div class="d-none d-sm-block categoryMenu mt-2 px-md-5 pb-2">
+    <div class="d-none d-sm-block categoryMenu mt-2 px-md-5 pb-1">
 
-        <div class="d-flex justify-content-between align-items-baseline">
+        <div class="d-flex justify-content-center align-items-baseline">
 
             <div class="text-center px-2">
                 <img src="../static/LED TV.svg"></img>
-                <div class="dropdown">
+                <div class="dropdown ">
                     <h4 class="categoryName">Electronic</h4>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu  shadow">
                         <li><a class="dropdown-item" href="#">24” LED TV</a></li>
                         <li><a class="dropdown-item" href="#">32” LED TV</a></li>
                         <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
@@ -181,17 +421,55 @@
             <div class="text-center px-2">
                 <img src="../static/Large Home Appliances.svg"></img>
 
-                <div class="dropdown">
+                <div class="dropdown text-center">
                     <h4 class="categoryName d-block">Large Home Appliances</h4>
 
 
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">24” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">32” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">50” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">55” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">60” & Above LED TV</a></li>
+                    <ul class="dropdown-menu menuDropDown px-2 shadow">
+                        <div class="d-flex">
+                            <div class=" text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Refrigerator</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Single Door</a></li>
+                                    <li><a class="dropdown-item" href="#">Double Door
+
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#"> Triple Door</a></li>
+                                    <li><a class="dropdown-item" href="#">Side By Side</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Washing Machine</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Fully Automatic Front Load
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Semi Automatic Front Load
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Fully Automatic Top Load</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Air Conditioners</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Inverter AC
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Split AC
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Window AC</a></li>
+                                    <li><a class="dropdown-item" href="#">Cooler</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center  px-1">
+                                <h5 class="fw-semibold mb-1">Micro Wave Oven </h5>
+                                <ul class="list-unstyled ">
+                                    <li><a class="dropdown-item" href="#">Solo
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Grill
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Convection</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -199,13 +477,61 @@
                 <img src="../static/Small Home App..svg"></img>
                 <div class="dropdown">
                     <h4 class="categoryName">Small Home Appliances</h4>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">24” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">32” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">50” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">55” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">60” & Above LED TV</a></li>
+                    <ul class="dropdown-menu shadropdown shadow">
+                        <div class="d-flex">
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-2 lh-1">Kitchen Appliances</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Mixer Juicer/Grinder</a></li>
+                                    <li><a class="dropdown-item" href="#">Coffee maker
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Toaster</a></li>
+                                    <li><a class="dropdown-item" href="#">Electric cooker</a></li>
+                                    <li><a class="dropdown-item" href="#">Electric Kettle</a></li>
+                                    <li><a class="dropdown-item" href="#">Hand blender</a></li>
+                                    <li><a class="dropdown-item" href="#">Egg boiler</a></li>
+                                    <li><a class="dropdown-item" href="#">Other</a></li>
+                                   </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-2 lh-1">Electrical Appliances</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Fans
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Vacuum cleaner
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Irons</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-2 lh-1">Water Purifier</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">RO
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">UV
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">RO+</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-2 lh-1">Cook Tops & Hobbs</h5>
+                                <ul class="list-unstyled ">
+                                    <li><a class="dropdown-item" href="#">induction
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">ceramic
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">gas</a></li>
+                                </ul>
+                            </div>
+                            <div class="text-center mb-2 lh-1 px-1">
+                                <h5 class="fw-semibold mb-1">Utensils </h5>
+                                <ul class="list-unstyled ">
+                                    <li><a class="dropdown-item" href="#">Kitchen utensils
+                                        </a></li>
+
+                                </ul>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -213,14 +539,14 @@
                 <img src="../static/Gadgets.svg"></img>
                 <div class="dropdown">
                     <h4 class="categoryName">Gadgets</h4>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">24” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">32” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">50” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">55” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">60” & Above LED TV</a></li>
-                    </ul>
+
+                    <ul class="dropdown-menu menuDropDown shadow list-unstyled">
+                        <li><a class="dropdown-item py-1 fs-6" href="#">Smart Watch & Bands</a></li>
+                        <li><a class="dropdown-item py-1 fs-6" href="#">Head Sets</a></li>
+                        <li><a class="dropdown-item py-1 fs-6" href="#">BT Speakers</a></li>
+                        <li><a class="dropdown-item py-1 fs-6" href="#">Home Theatre </a></li>
+                        </ul>
+
                 </div>
 
             </div>
@@ -228,13 +554,36 @@
                 <img src="../static/Fashion.svg"></img>
                 <div class="dropdown">
                     <h4 class="categoryName">Fashion</h4>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">24” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">32” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">50” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">55” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">60” & Above LED TV</a></li>
+                    <ul class="dropdown-menu shadropdown shadow ">
+                        <div class="d-flex">
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Women Clothing</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                    <li><a class="dropdown-item" href="#">Bottom wear
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Men Clothing</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                    <li><a class="dropdown-item" href="#">Bottom wear
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center  px-1">
+                                <h5 class="fw-semibold mb-1">Kids Clothing</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Top wear</a></li>
+                                    <li><a class="dropdown-item" href="#">Bottom wear
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Ethnic</a></li>
+                                    </ul>
+                            </div>
+                        </div>
                     </ul>
                 </div>
 
@@ -243,23 +592,292 @@
                 <img src="../static/personal Care.svg"></img>
                 <div class="dropdown">
                     <h4 class="categoryName">Personal Care</h4>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">24” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">32” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">40”-43” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">50” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">55” LED TV</a></li>
-                        <li><a class="dropdown-item" href="#">60” & Above LED TV</a></li>
+                    <ul class="dropdown-menu pcdropdown shadow menuDropDown">
+                        <div class="d-flex">
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Accessories</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Men Footwear</a></li>
+                                    <li><a class="dropdown-item" href="#">Women Footwear</a></li>
+                                    <li><a class="dropdown-item" href="#">Bags
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Wallet</a></li>
+                                    <li><a class="dropdown-item" href="#">Belts</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Beauty</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Eye makeup</a></li>
+                                    <li><a class="dropdown-item" href="#">Face makeup
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Lip makeup</a></li>
+                                    <li><a class="dropdown-item" href="#">Body & Skin care</a></li>
+                                    <li><a class="dropdown-item" href="#">Hair care</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center border-end px-1">
+                                <h5 class="fw-semibold mb-1">Grooming</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Shaving Essentials</a></li>
+                                    <li><a class="dropdown-item" href="#">Face & Body care
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Hair styling</a></li>
+                                    </ul>
+                            </div>
+                            <div class="text-center px-1">
+                                <h5 class="fw-semibold mb-1">Jwellery</h5>
+                                <ul class="list-unstyled">
+                                    <li><a class="dropdown-item" href="#">Jewellery Set</a></li>
+                                    <li><a class="dropdown-item" href="#">Earrings
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="#">Mangalsutras</a></li>
+                                    <li><a class="dropdown-item" href="#">Bangles</a></li>
+                                    <li><a class="dropdown-item" href="#">Necklaces</a></li>
+                                    <li><a class="dropdown-item" href="#">Rings</a></li>
+                                    <li><a class="dropdown-item" href="#">Anklets</a></li>
+                                    </ul>
+                            </div>
+
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-<!-- for desktop catogery bar end-->
+    <!-- for desktop catogery bar end-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    <!--for desktop banners start -->
+    <div id="carouselExampleRide" class="carousel slide d-none d-sm-block" data-bs-ride="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/banner for desktop/Homepage Banner 2.jpg" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/banner for desktop/Homepage Banner 3.jpg" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/banner for desktop/Homepage Banner.jpg" class="d-block  w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--for desktop  banners end -->
+
+    <!--for mobile banners start -->
+    <div id="carouselExampleRide" class="carousel slide d-block d-sm-none" data-bs-ride="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../static/banner for phone/Homepage 1.jpg" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/banner for phone/Homepage banner 1.jpg" class="d-block  w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../static/banner for phone/Homepage banner 1.jpg" class="d-block  w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!--for mobile  banners end -->
+
+    <!-- add banner start -->
+    <div class="container-fluid mt-2">
+        <div class="row d-flex flex-wrap justify-content-between align-items-center">
+            <div class="col-12 col-md-6 addBannerDiv"><img src="../static/ADD BENNER/Frame 19.svg"></div>
+
+            <div class="col-12 col-md-6 addBannerDiv"><img src="../static/ADD BENNER/Frame 19.svg"></div>
+        </div>
+    </div>
+    <!-- add banner end -->
+
+    <div class="text-center py-2 mb-1 mx-0 border border-3 ">
+        <h4 class="textBtwBanner fw-bold ">Top Categories to choose from</h4>
+    </div>
+
+    <!-- electronic start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/electronics.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white"><img src="../static/led1.svg"></div>
+                    <div class="item bg-white"><img src="../static/led2.svg"></div>
+                    <div class="item bg-white"><img src="../static/led3.svg"></div>
+                    <div class="item bg-white"><img src="../static/let4.svg"></div>
+                    <div class="item bg-white"><img src="../static/let5.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- electronic end -->
+
+    <!-- large appliances start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/large appliances.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white  py-1"><img src="../static/cooler.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/Double door Refrigerator.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/split AC.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/Front load washing machine.svg"></div>
+                    <div class="item bg-white pt-1"><img src="../static/Convection Micro wave oven.svg"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- large appliances end -->
+
+    <!-- small appliances start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/small appliances.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white  py-1"><img src="../static/Ceiling fan.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/Electric Kettle.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/Induction Cooktop.svg"></div>
+                    <div class="item bg-white  py-1"><img src="../static/Iron.svg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- small appliances start -->
+
+    <!-- gadget start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/gadgetS IMG.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white py-1"><img src="../static/BT Speaker.svg"></div>
+                    <div class="item bg-white py-1"><img src="../static/Head Phones.svg"></div>
+                    <div class="item bg-white py-1"><img src="../static/Smart Watches.svg"></div>
+                    <div class="item bg-white py-1"><img src="../static/Home Theater.svg"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- gadget end -->
+
+    <!-- fashion start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/fashioN IMG.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white"><img src="../static/Kids top wear.svg"></div>
+                    <div class="item bg-white"><img src="../static/Men’s top ware.svg"></div>
+                    <div class="item bg-white"><img src="../static/Women bottom ware.svg"></div>
+                    <div class="item bg-white"><img src="../static/Women ethnic.svg"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fashion end -->
+
+    <!-- personal care start -->
+    <div class="container-fluid mb-4 shadow-sm">
+        <div class="row d-flex justify-content-around align-items-center categoryRow">
+            <div class="col-12 col-md-3 categoryFix"><img src="../static/personalCare.svg" alt=""></div>
+            <div class="col-12 col-md-8">
+                <div class=" owl-carousel owl-theme">
+                    <div class="item bg-white"><img src="../static/Jwellery.svg"></div>
+                    <div class="item bg-white"><img src="../static/Lipsticks.svg"></div>
+                    <div class="item bg-white"><img src="../static/Shoes.svg"></div>
+                    <div class="item bg-white"><img src="../static/Skin Care.svg"></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- personal care end -->
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid footer">
+        <div class="container d-flex flex-column justify-content-center">
+            <div class="row d-flex gap-4  py-4 f-main">
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <h4 class="fw-bold">ABOUT</h4>
+                    <a class="footerATag" href="#">About Us</a>
+                    <a class="footerATag" href="#">Contact Us</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex flex-column">
+                    <h4 class="fw-bold">Consumer Policy</h4>
+                    <a class="footerATag" href="#">Return Policy</a>
+                    <a class="footerATag" href="#">Terms Of Use</a>
+                </div>
+                <div class="col-12 col-md-3 flex flex-column ">
+                    <h4 class="fw-bold">SOCIAL</h4>
+                    <div class="d-flex  gap-4">
+                        <a href="#"><i class="bi bi-instagram fm-icon"></i></a>
+                        <a href="#"><i class="bi bi-linkedin fm-icon"></i></a>
+                        <a href="#"><i class="bi bi-facebook fm-icon"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-between py-4 f-sub">
+                <div class="d-flex justify-content-center align-center">
+                    <div class="d-flex gap-1 f-links">
+                        <i class="bi bi-bag-fill f-icon"></i>
+                        <a href="#">Become Seller</a>
+                    </div>
+                    <div class="d-flex gap-2 f-links">
+                        <i class="bi bi-star-fill f-icon"></i>
+                        <a href="#">Advertise</a>
+                    </div>
+                    <div class="d-flex gap-2 f-links">
+                        <i class="bi bi-patch-question-fill f-icon"></i>
+                        <a href="#">Help center</a>
+                    </div>
+                    <div class="d-flex gap-2 f-links">
+                        <i class="bi bi-c-circle-fill f-icon"></i>
+                        <a href="#">wobo4u.com</a>
+                    </div>
+                </div>
+                <div class="d-flex fPayment-images">
+                    <img src="../static/footerImages/payment-method_69e7ec.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -268,6 +886,32 @@
         crossorigin="anonymous"></script>
     <!-- BootStrap link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- carousel script -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            loop: true,
+            margin: 10,
+            nav: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                300: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
 </body>
 
 </html>

@@ -4,20 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wishlist</title>
-    <title>WishListPage</title>
+    <title>My Info</title>
     <!-- BootStrap Icon Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- BootStarp Link -->
+    <!-- bootstrap css link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- style Sheet link -->
-    <link rel="stylesheet" href="../static/css/wishList.css">
-    <!-- js link -->
-<script src="../static/js/cart.js" defer></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Style Sheet Link -->
+    <link rel="stylesheet" href="../static/css/myInfo.css">
 </head>
 <body>
     <!-- Header -->
+    
     <div class="navHeader">
         <div><a href="#"><img class='logoForWebsite' src="../static/logo.png"></img></a></div>
         <div class="searchFild"><input type="search" class="searchBar"
@@ -75,30 +74,57 @@
         </div>
     </div>
 
-    <!-- Main Section -->
-    <div class="container wishlist-content ">
-        <div class="wishlist-product d-flex gap-4 justify-content-center flex-wrap">
-            <div class="productImg">
-                <img src="../static/productImages/iphone-14-finish-select-202209-6-1inch-blue.jpeg"></img>
+    <!-- Main -->
+    <div class="container-fluid my-info d-flex my-4 justify-content-center py-5 flex-wrap">
+        <div class="d-flex flex-column main-info py-4 px-2">
+            <div class="d-flex info-name-pic gap-4">
+                <div class="info-pic">
+                    <img src="../static/logo.png" alt="">
+                </div>
+                <div class="info-name">
+                    <p>Hello</p>
+                    <h2>USER NAME</h2>
+                </div>
             </div>
-            <div class="d-flex flex-column gap-3 ">
-                <a href="#"><b>UBL Head Phone</b></a>
-                <p class="lh-sm">Rockerz 370 come equipped with latest Bluetooth v5.0 for instant wireless
-                    connectivity
-                </p>
-                <p>
-                    <b>Rs. 1700/- </b>
-                    <span class="px-3"> 2000/-</span>
-                </p>
+            <hr>
+            <div class="d-flex justify-content-start my-order-info">
+                <div>
+                    <h5>My Orders</h5>
+                </div>
+                <button class="my-order-icon btn btn-success">
+                    <i class="bi bi-bag-fill"></i>
+                </button>
+                
             </div>
-            <div class="flex flex-col">
-                <button type="button" class="btn btn-success">Add to Cart</button>
-                <button type="button" class="btn btn-outline-danger"><i class="bi bi-trash-fill "></i></button>
+        </div>
+        <div class="d-flex flex-column info-edit">
+            <div class="info-edit-text d-flex justify-content-between">
+                <h4>Personal Information</h4>
+                <button class="btn btn-dark"><i class="bi bi-pen"></i> Edit</button>
+            </div>
+            <div class="info-form-edit">
+                <form action="" class="d-flex flex-column justify-content-evenly">
+                    <div class="mb-3">
+                        <label for="edit-name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="edit-name">
+                        <div class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit-email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="edit-email">
+                        <div  class="form-text"></div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="edit-phoneNo" class="form-label">Phone Number</label>
+                        <input type="number" class="form-control" id="edit-phoneNo">
+                        <div id="emailHelp" class="form-text"></div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
-    <!-- BootStarp Script Link  -->
+    
+    <!-- BootStarp Script link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

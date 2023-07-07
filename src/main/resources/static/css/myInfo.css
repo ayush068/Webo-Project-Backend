@@ -128,9 +128,9 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 100%;
     border: 1px solid black;
 }
-.info-pic img
+.info-pic i
 {
-    width: 100%;
+    font-size: 30px;
 }
 
 .my-order-info

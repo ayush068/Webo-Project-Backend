@@ -11,7 +11,6 @@
 	text-decoration: none;
 	color:#3E3E40;
 	font-size: larger;
-    line-height: 80%;
 }
 p{
     margin-bottom: 0px;
@@ -70,8 +69,7 @@ padding: 0%;
 }
 
 .dropdown-toggle:after{
-   content:none;
-   color: #fff;
+   content:none
    }
 
 .cartIcon{
@@ -98,9 +96,6 @@ position: relative;
     .becomeSeller{
         display:none
     }
-	.productsBar_Names{
-		display: none;
-	}
 }
 /* header css end */
 .product-cart {
@@ -111,6 +106,9 @@ position: relative;
 
     margin-bottom: 20px;
   }
+  .star{
+    background-color: #F86F03;
+}
 
   .product-cart img {
     max-width: 100%;

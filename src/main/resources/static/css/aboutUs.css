@@ -1,6 +1,10 @@
-body,
-html {
-  font-family: Arial, Helvetica, sans-serif;
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	color:#3e3e40;
 }
 
 /* header css */
@@ -27,12 +31,6 @@ p{
 
 .aboutUs-content
 {
-    /* background-image: url("../aboutus_contactUs_page-bg.jpg");
-    background-size: 100%;
-    background-position: center; */
-    width: 70%;
-    padding: 2rem;
-    margin-top: 4rem; 
     font-size: 20px;
     font-weight: 500;
     text-align: left;
@@ -45,11 +43,17 @@ p{
 .aboutUs-p
 {
     line-height: 2rem;
-    margin: 1.5rem auto;
+
 }
-#logo-img
+/* .logoImgDiv
 {
-    width: 15rem;
-    background-color: black;
+    width: 300px;
+    height:200px;
     border-radius: 5px;
+} */
+.logoImgDiv img{
+    width: 300px;
+    height:200px;
+    /* object-fit: contain; */
+
 }

@@ -42,7 +42,14 @@
 .fPayment-images img{
     width: 200%;
 }
-
+.aagsImgCover{
+    width: 100px;
+    height: 50px;
+}
+.aagsImg{
+    width: 100px;
+    height: 50px;
+}
 /* Meadia Query for Footer */
 @media only screen and (max-width: 600px){
 

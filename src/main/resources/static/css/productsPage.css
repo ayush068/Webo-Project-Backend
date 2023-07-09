@@ -1,13 +1,17 @@
-body,
-html {
-  font-family: Arial, Helvetica, sans-serif;
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	color:#3e3e40;
 }
-
 /* header css */
 .aTag{
 	text-decoration: none;
 	color:#3E3E40;
 	font-size: larger;
+    line-height: 80%;
 }
 p{
     margin-bottom: 0px;
@@ -32,9 +36,6 @@ input[type=search]
     font-size: 16px;
     padding: 4px 2px 0px 4px;
 	outline: none;
-
-
-
 }
 .searchFild{
     position:relative
@@ -68,9 +69,11 @@ padding: 0%;
     color:#2732C2;
 }
 
-.profileToggle:after{
-    content: none;
+.dropdown-toggle:after{
+   content:none;
+   color: #fff;
    }
+
 .cartIcon{
 position: relative;
 }
@@ -85,8 +88,6 @@ position: relative;
     font-size: 10px;
     border:1px solid #fff;
 }
-
-/* Meadia Query for header */
 @media only screen and (max-width: 600px){
     .searchIconMobile{
         display:block;
@@ -97,69 +98,39 @@ position: relative;
     .becomeSeller{
         display:none
     }
+	.productsBar_Names{
+		display: none;
+	}
 }
+/* header css end */
+.product-cart {
+    width: 200px;
+    height: 250px;
+    border: 1px solid #ccc;
+    padding: 10px;
 
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
+    margin-bottom: 20px;
+  }
 
-/* Main */
-.my-info
-{
-    background-color: #EAF3FB;
-    align-items: center;
-    gap: 10rem;
-}
-.main-info
-{
-    background-color: #FFFFFF;
-}
-.info-name-pic
-{
-    align-items: center;
-    text-align: left;
-}
+  .product-cart img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
 
-/* USER PIC */
-.info-pic
-{
-    width: 70px;
-    height: 70px;
-    border-radius: 100%;
-    border: 1px solid #3e3e40;
-    text-align: center;
-}
-.info-pic i
-{
-    font-size: 45px;
-    color: #198754;
-}
+  .product-cart .brand {
+width:190px ;
+height:20px;
+overflow: hidden;
+    margin-bottom: 5px;
+  }
 
-.my-order-info
-{
-    align-items: center;
-    gap: 2rem;
-}
-.my-order-icon
-{
-    border-radius: 12px;
-    width: 5rem;
-    padding-top: .2rem;
-    padding-bottom: .2rem;
-    border: none;
-}
+  .product-cart .price {
+    margin-bottom: 5px;
+  }
 
-/* Edit info part */
-.info-edit
-{
-    background-color: #FFFFFF;
-    padding: 2rem;
-}
-.info-edit-text
-{
-    gap: 5rem;
-}
-.info-edit-text h4
-{
-    border-bottom: 1.5px solid black;
-}
+  .product-cart .discount {
+    color: #03C04A;
+    margin-bottom: 5px;
+    font-weight: 900;
+  }

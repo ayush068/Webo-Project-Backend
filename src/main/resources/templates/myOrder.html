@@ -147,35 +147,34 @@
                         <button type="button" class="btn btn-warning">Return</button>
                     </div>
                 </div>
-                <div class="d-flex justify-content-center flex-column rateUs-contents gap-3">
-                    <p><i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i>
-                        <i class="bi bi-star-fill"></i> </p>
-                    <button class="btn btn-outline-light" id="rate-btn" type="toggle">Rate This Product</button>
-                </div>
-                <div class="container rateing-contents flex-column py-2 gap-2" id="rating-contents">
-                    <div class="row reveiw-contents d-flex justify-content-evenly gap-2">
-                        <div class="col-12 col-md-5 form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2"> Comments</label>
-                        </div>
-                        <div class="col-12 col-md-5 d-flex justify-content-center reveiw-imgs px-0 flex-wrap">
-                            <button class="btn btn-primary me-4"><i class="bi bi-camera-fill"></i> ADD</button>
-                            <!-- <input type="file" accept="image/*" capture="camera"> -->
-                            <div class="productImg">
-                                <img src="../static/f1.png"></img>
-                            </div>
-                            <div class="productImg">
-                                <img src="../static/f1.png"></img>
-                            </div>
-
+                <!-- Rate us butttons -->
+                <div class="rateUs-contents">
+                    <div class="post">
+                        <div class="thank-rating-text">Thanks for rating Us</div>
+                        <div class="edit-rating">
+                            Edit
                         </div>
                     </div>
-                    <div class="review-submit">
-                        <button class="btn btn-success">Submit</button>
+                    <div class="star-widget">
+                        <input type="radio" name="rate" id="rate-5">
+                        <label for="rate-5" class="bi bi-star-fill"></label>
+                        <input type="radio" name="rate" id="rate-4">
+                        <label for="rate-4" class="bi bi-star-fill"></label>
+                        <input type="radio" name="rate" id="rate-3">
+                        <label for="rate-3" class="bi bi-star-fill"></label>
+                        <input type="radio" name="rate" id="rate-2">
+                        <label for="rate-2" class="bi bi-star-fill"></label>
+                        <input type="radio" name="rate" id="rate-1">
+                        <label for="rate-1" class="bi bi-star-fill"></label>
+                        <form action="#" class="rate-us-form">
+                            <header></header>
+                            <div class="textarea">
+                                <textarea placeholder="Describe Your experince ..." cols="30" rows="3"></textarea>
+                            </div>
+                            <div class="btns">
+                                <button class="btn btn-danger"id="post-b" type="submit">Post</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

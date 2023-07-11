@@ -1,14 +1,17 @@
 // Variables
-const rateBtn = document.getElementById("rate-btn")
-let rateContents = document.getElementById("rating-contents")
-rateBtn.addEventListener("click",(e)=>{
+const postBtn = document.getElementById("post-b");
+const postContents = document.querySelector(".post");
+const widget = document.querySelector(".star-widget");
+const editBtn = document.querySelector(".edit-rating");
+
+postBtn.addEventListener("click",(e)=>{
     e.preventDefault();
-    if (rateContents.style.display == "none")
-    {
-        rateContents.style.display = "flex"
+    widget.style.display = "none";
+    postContents.style.display = "block";
+    editBtn.onclick = ()=>{
+        e.preventDefault();
+        widget.style.display = "block";
+        postContents.style.display = "none";
     }
-    else
-    {
-        rateContents.style.display = "none"
-    }
+    return false;
 })

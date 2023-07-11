@@ -274,56 +274,94 @@ h2{
 .rateUs-contents{
     text-align: center;
     align-items: center;
+    /* background-color: black; */
 }
-.rateUs-contents p i
+.star-widget input
 {
-    color: bisque;
-    cursor: pointer;
-}
-#rate-btn
-{
-    color: black;
-}
-.rateing-contents
-{
-    border: 1px solid black;
     display: none;
 }
-
-.reveiw-contents .form-floating
+.star-widget label
 {
-/* width: 100%; */
-
-    border-radius: 5px;
+    font-size: 20px;
+    color: #444;
+    padding: .5rem;
+    float: right;
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
-.reveiw-contents .form-floating textarea
+.star-widget input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label
 {
-    background-color: #eaf3fb;
+    color: rgb(238, 205, 57);
 }
-/* .reveiw-contents .reveiw-imgs
+.star-widget input:checked ~ label
 {
-
-   width: 100%;
-} */
-.reveiw-imgs
-{
-    align-items: center;
-    border-radius: 5px;
-    background-color: #eaf3fb;
-
+    color: rgb(238, 205, 57);
 }
-.reveiw-imgs .productImg
+.star-widget input#rate-5:checked ~ label
 {
-    width: 150px;
-    height: 100px;
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
 }
-.review-submit
+.rate-us-form
+{
+    display: none;
+}
+.star-widget input:checked ~ .rate-us-form{
+    display: block;
+}
+.rate-us-form header
 {
     width: 100%;
+    font-size: 20px;
+    color: #fe7;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
     text-align: center;
+    transition: all 0.2s ease;
 }
-.review-submit button
+.rate-us-form .textarea
 {
-    width: 30%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.rate-us-form .textarea textarea
+{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    padding: 10px;
     font-size: 17px;
+    resize: none;
+}
+.rate-us-form .btn
+{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.thank-rating-text
+{
+    font-size: 25px;
+    font-weight: 500;
+}
+.edit-rating
+{
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid black;
+}
+.edit-rating :hover
+{
+    text-decoration: underline;
+
+}
+.post
+{
+    display: none;
 }

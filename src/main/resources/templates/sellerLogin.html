@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Login Page</title>
+    <!-- fontLink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="../static/css/sellerLogin.css">
+</head>
+
+<body>
+    <div class="containers">
+        <section class="header">
+            <div id="header-text">
+                <h2>Seller Login To </h2><a class="aTagLogo" href="#"> <img src="../static/WOBO 4u.world Logo.jpg" alt="" class="logo"></a>
+            </div>
+        </section>
+        <div>
+            <p class="Login-account"><b>LOGIN </b> to Your Account</p>
+        </div>
+        <!-- Inputs field -->
+        <div class="sinputfields">
+            <!-- Form inputs -->
+            <form id="slogin-form" name="slform" action="/validate" method="post" onsubmit="return sloginValidateForm()">
+                <div id="slogin-phone" class="slogin-inFields">
+
+                    <input type="number" id="login-input-pnumber" name="smobile" placeholder="Phone Number">
+                    <p class="slogin-input-errors"></p>
+                </div>
+                <div id="slogin-password" class="slogin-inFields">
+                    <input type="password" id="slogin-input-password" name="spassword" placeholder="Password">
+                    <p class="slogin-input-errors"></p>
+                </div>
+                <div class="slogin-submit">
+                    <input type="submit" class="btn" id="slogin-continue" value="Login">
+                </div>
+            </form>
+        </div>
+        <div id="sfpass">
+            <a href="" id="sforgot-password-link">Forgot Password?</a>
+        </div>
+        <p>Or</p>
+        <div id="signup-options">
+            <p>Sing Up With</p>
+            <div class="sicons" id="signup-icons">
+                <a href="" class="sicon"><i class="bi bi-facebook" id="fb-login-icon"></i></a>
+                <a href="" class="sicon"><i class="bi bi-google" id="google-login-icon"></i></a>
+            </div>
+        </div>
+        <div class="ssign-up-link">
+            <p>New Seller? <a href="SignUp"><b> SIGN Up</b></a></p>
+
+        </div>
+        <span id="container-close">&times;</span>
+    </div>
+
+    <!-- Modals after hitting the forgot password -->
+    <div class="smodal">
+        <div id="smodal-content">
+            <span class="sclose">&times;</span>
+            <!-- Forgot password content -->
+            <div id="sforget-password-modal" class="smodal-information">
+                <p>Forgot Password</p>
+                <input type="text" placeholder="phone Number" required id="semail-phone-modal">
+                <p class="serror-input" id="serror-phone-gmail">Please enter the registerd phone Number </p>
+                <div id="sforget-password-modal-link" class="modal-last-contents">
+                    <button id="ssend-otp">Send Otp</button>
+                    <a href="register" id="smodal-register">Seller Register</a>
+                </div>
+            </div>
+            <!-- Verfiy OTP content -->
+            <div class="smodal-information" id="sotp-verify-modal">
+                <p>Verify OTP</p>
+                <input type="number" placeholder="OTP" id="sotp-value">
+                <p class="serror-input" id="serror-otp">Please enter the recived OTP</p>
+                <div id="sotp-information-links" class="modal-last-contents">
+                    <p id="stimer">00.0</p>
+                    <button id="sverify-otp">Verify</button>
+                    <a href="#" id="sresend-otp">Resend OTP</a>
+                </div>
+            </div>
+            <!--New password  -->
+            <div class="smodal-information" id="snew-password-modal">
+                <div class="modal-input-fields">
+                    <input type="password" required placeholder="New Password" id="snew-password">
+                    <p class="serror-input" id="serror-password">
+                    </p>
+                </div>
+                <div class="modal-input-fields">
+                    <input type="password" required placeholder="Confirm Password" id="sconfirm-password">
+                    <p class="serror-input" id="error-confirmpassword">
+                    </p>
+                </div>
+                <div id="new-password-confirm-links" class="modal-last-contents">
+                    <button id="snew-password-done">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Js File -->
+    <script src="../static/js/sellerLogin.js"></script>
+</body>
+
+</html>

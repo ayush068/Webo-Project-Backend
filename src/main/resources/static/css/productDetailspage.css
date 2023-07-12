@@ -126,9 +126,8 @@ padding: 2px;
     object-fit: contain;
 }
 .heart{
-
     padding:8px 10px;
-
+    cursor: pointer;
 }
 .star{
     background-color: #F86F03;

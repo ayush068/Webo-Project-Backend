@@ -50,7 +50,7 @@ a:hover
 {
     color:#2732C2;
 }
-.sign-up-link b:hover{
+.ssign-up-link b:hover{
     color:#2732C2;
 }
 /* LOGO design */
@@ -126,13 +126,13 @@ form
     gap: 2rem ;
     margin-bottom: .5rem;
 }
-.login-inFields
+.slogin-inFields
 {
     display: flex;
     flex-direction: column;
     gap: .2rem;
 }
-.login-submit input[type="submit"]
+.slogin-submit input[type="submit"]
 {
     width: 25rem;
 }
@@ -148,11 +148,11 @@ input
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.login-inFields p
+.slogin-inFields p
 {
     color: red;
 }
-#fpass
+#sfpass
 {
     margin-bottom: 1.5rem;
 }
@@ -172,13 +172,13 @@ b
     align-items: center;
     font-size: 20px;
 }
-.icons
+.sicons
 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.icon
+.sicon
 {
     width: 4rem;
     font-size: 2rem;
@@ -208,21 +208,21 @@ b
 
 /* Modal design */
 /* contents of the modal */
-.modal-information
+.smodal-information
 {
     display: flex;
     flex-direction: column;
     gap: 20px;
     font-size: 16px;
 }
-.modal-information input
+.smodal-information input
 {
     padding: 8px 11px;
     width: 90%;
     max-width: 90%;
     border: 1px solid #F1F1F1
 }
-.modal-information button
+.smodal-information button
 {
     height: 36.183265686035156px;
     width: 144px;
@@ -236,7 +236,7 @@ b
     cursor: pointer;
 }
 /* Error inputs */
-.error-input
+.serror-input
 {
     color: red;
 }
@@ -249,40 +249,40 @@ b
 }
 
 /* forgot password */
-#forget-password-modal
+#sforget-password-modal
 {
     display: none;
 }
-#forget-password-modal #forget-password-modal-link a
+#sforget-password-modal #sforget-password-modal-link a
 {
     color: #2732C2;
 }
 
 /* otp verification */
-#otp-verify-modal
+#sotp-verify-modal
 {
  display: none;
 }
-#resend-otp
+#sresend-otp
 {
     display: none;
 }
-#timer
+#stimer
 {
     display: none;
     text-align: left;
 }
 /* new passoword information */
-#new-password-modal
+#snew-password-modal
 {
     display: none;
 }
 /* closing icon */
-.close
+.sclose
 {
     cursor: pointer;
 }
-.modal
+.smodal
 {
     display: none;
     width: 100%;
@@ -294,7 +294,7 @@ b
     overflow: auto;
     z-index: 1;
 }
-#modal-content
+#smodal-content
 {
     position: relative;
     background-color: #FFFFFF;
@@ -317,7 +317,7 @@ b
         transform: translatey(0rem);
     }
 }
-.close
+.sclose
 {
     position: absolute;
     top: 5px;
@@ -328,7 +328,7 @@ b
 }
 
 /* error inputs class */
-.error-input
+.serror-input
 {
     display: none;
 }
@@ -360,7 +360,7 @@ b
     position: relative;
 }
 
-#login-continue
+#slogin-continue
 {
     width: 16rem;
     margin-bottom: .8rem;

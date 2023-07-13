@@ -1,367 +1,337 @@
-*
-{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Nunito', sans-serif;
-	color:#3e3e40;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  color: #3e3e40;
 }
 
 /* header css */
-.aTag{
-	text-decoration: none;
-	color:#3E3E40;
-	font-size: larger;
+.aTag {
+  text-decoration: none;
+  color: #3e3e40;
+  font-size: larger;
 }
-p{
-    margin-bottom: 0px;
+p {
+  margin-bottom: 0px;
 }
-.navHeader{
-    padding: 0px 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
-
+.navHeader {
+  padding: 0px 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.logoForWebsite{
-    width: 5rem;
+.logoForWebsite {
+  width: 5rem;
 }
-input[type=search]
-{
-    background-color: #eaf3fb;
-    border-radius: 15px;
-    border: 1px solid #eaf3fb ;
-    width: 25rem;
-    font-size: 16px;
-    padding: 4px 2px 0px 4px;
-	outline: none;
-
-
-
+input[type="search"] {
+  background-color: #eaf3fb;
+  border-radius: 15px;
+  border: 1px solid #eaf3fb;
+  width: 25rem;
+  font-size: 16px;
+  padding: 4px 2px 0px 4px;
+  outline: none;
 }
-.searchFild{
-    position:relative
+.searchFild {
+  position: relative;
 }
-.searchIcon{
-    background-color: #eaf3fb;
-    border:1px solid #3E3E40;
-    padding: 3px 8px 0px 8px;
-    position:absolute;
-    right:0px;
-    border-radius: 0px 15px 15px 0px;
-    cursor: pointer;
+.searchIcon {
+  background-color: #eaf3fb;
+  border: 1px solid #3e3e40;
+  padding: 3px 8px 0px 8px;
+  position: absolute;
+  right: 0px;
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
 }
-.searchIcon svg{
-    margin-bottom: 4px;
+.searchIcon svg {
+  margin-bottom: 4px;
 }
-.rightSideOfNav{
-    display: flex;
- justify-content: space-around;
- align-items: center;
-gap:16px
+.rightSideOfNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
 }
-.searchIconMobile{
-    display:none;
-padding: 0%;
+.searchIconMobile {
+  display: none;
+  padding: 0%;
 }
-.profileToggle{
- border:none;
+.profileToggle {
+  border: none;
 }
-.iconInDropdown{
-    color:#2732C2;
+.iconInDropdown {
+  color: #2732c2;
 }
 
-.profileToggle:after{
-    content: none;
-   }
-.cartIcon{
-position: relative;
+.profileToggle:after {
+  content: none;
 }
-.numberOnCart{
-    position: absolute;
-    top:-6px;
-    right:-5px;
-    background-color: #2732C2;
-    color: #fff;
-    padding: 0px 4px;
-    border-radius: 50px;
-    font-size: 10px;
-    border:1px solid #fff;
+.cartIcon {
+  position: relative;
+}
+.numberOnCart {
+  position: absolute;
+  top: -6px;
+  right: -5px;
+  background-color: #2732c2;
+  color: #fff;
+  padding: 0px 4px;
+  border-radius: 50px;
+  font-size: 10px;
+  border: 1px solid #fff;
 }
 
 /* Meadia Query for header */
-@media only screen and (max-width: 600px){
-    .searchIconMobile{
-        display:block;
-    }
-    .searchFild{
-        display:none
-    }
-    .becomeSeller{
-        display:none
-    }
+@media only screen and (max-width: 600px) {
+  .searchIconMobile {
+    display: block;
+  }
+  .searchFild {
+    display: none;
+  }
+  .becomeSeller {
+    display: none;
+  }
 }
 
 /* Main */
-.my-orders
-{
-    margin: 1rem auto;
+.my-orders {
+  margin: 1rem auto;
 }
-.orders
-{
-    border:1px solid #f1f1f1;
-    padding:5px 10px;
-    margin-bottom:12px;
+.orders {
+  border: 1px solid #f1f1f1;
+  padding: 5px 10px;
+  margin-bottom: 12px;
 }
-.productImg{
-
-    width:200px;
-    height:150px
+.productImg {
+  width: 200px;
+  height: 150px;
 }
-.productImg img{
-    width: 100%;
-    height:100%;
-    object-fit: contain;
+.productImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 /* Help Center */
-.help-details
-{
-    justify-content: center;
-    align-items: center;
-    border:1px solid #f1f1f1;
-    padding:5px 10px;
-    margin-bottom:12px;
+.help-details {
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f1f1f1;
+  padding: 5px 10px;
+  margin-bottom: 12px;
 }
-.customer-help
-{
-    font-size: 20px;
-    text-align: left;
+.customer-help {
+  font-size: 20px;
+  text-align: left;
 }
-.customer-help i
-{
-    color: #2832C6;
+.customer-help i {
+  color: #2832c6;
 }
-
 
 /* STEP Progress bar style */
-h2{
-    color: #2F8D46;
+h2 {
+  color: #2f8d46;
 }
 #form {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 #form fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0.5rem;
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    position: relative
+  background: white;
+  border: 0 none;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  position: relative;
 }
 
 .finish {
-    text-align: center
+  text-align: center;
 }
 
 #form fieldset:not(:first-of-type) {
-    display: none
+  display: none;
 }
 
-#form .previous-step, .next-step {
-    width: 100px;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
+#form .previous-step,
+.next-step {
+  width: 100px;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 0px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px 10px 0px;
+  float: right;
 }
 
-.form, .previous-step {
-    background: #616161;
+.form,
+.previous-step {
+  background: #616161;
 }
 
-.form, .next-step {
-    background: #2F8D46;
+.form,
+.next-step {
+  background: #2f8d46;
 }
 
 #form .previous-step:hover,
 #form .previous-step:focus {
-    background-color: #000000
+  background-color: #000000;
 }
 
 #form .next-step:hover,
 #form .next-step:focus {
-    background-color: #2F8D46
+  background-color: #2f8d46;
 }
 
 .text {
-    color: #2F8D46;
-    font-weight: normal
+  color: #2f8d46;
+  font-weight: normal;
 }
 #progressbar .active {
-    color: #2F8D46
+  color: #2f8d46;
 }
 
 #progressbar li {
-    list-style-type: none;
-    font-size: 15px;
-    width: 25%;
-    float: left;
-    position: relative;
-    font-weight: 400
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
 }
 
 #progressbar #step1:before {
-    content: ""
+  content: "";
 }
 
 #progressbar #step2:before {
-    content: ""
+  content: "";
 }
 
 #progressbar #step3:before {
-    content: ""
+  content: "";
 }
 
 #progressbar #step4:before {
-    content: ""
+  content: "";
 }
 
 #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
-    display: block;
-    font-size: 20px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
 }
 
 #progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: lightgray;
-    position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
 }
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #2F8D46
+  background: #2f8d46;
 }
 
 .progress {
-    height: 20px
+  height: 20px;
 }
 
 .progress-bar {
-    background-color: #2F8D46
+  background-color: #2f8d46;
 }
 
-.rateUs-contents{
-    text-align: center;
-    align-items: center;
-    /* background-color: black; */
+.rateUs-contents {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /* background-color: black; */
 }
-.star-widget input
-{
-    display: none;
+.starInput {
+  display: none;
 }
-.star-widget label
-{
-    font-size: 20px;
-    color: #444;
-    padding: .5rem;
-    float: right;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-.star-widget input:not(:checked) ~ label:hover,
-input:not(:checked) ~ label:hover ~ label
-{
-    color: rgb(238, 205, 57);
-}
-.star-widget input:checked ~ label
-{
-    color: rgb(238, 205, 57);
-}
-.star-widget input#rate-5:checked ~ label
-{
-    color: #fe7;
-    text-shadow: 0 0 20px #952;
-}
-.rate-us-form
-{
-    display: none;
-}
-.star-widget input:checked ~ .rate-us-form{
-    display: block;
-}
-.rate-us-form header
-{
-    width: 100%;
-    font-size: 20px;
-    color: #fe7;
-    font-weight: 500;
-    margin: 5px 0 20px 0;
-    text-align: center;
-    transition: all 0.2s ease;
-}
-.rate-us-form .textarea
-{
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-.rate-us-form .textarea textarea
-{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 17px;
-    resize: none;
-}
-.rate-us-form .btn
-{
-    height: 45px;
-    width: 100%;
-    margin: 15px 0;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.thank-rating-text
-{
-    font-size: 25px;
-    font-weight: 500;
-}
-.edit-rating
-{
-    font-size: 16px;
-    font-weight: 500;
-    cursor: pointer;
-    border: 1px solid black;
-}
-.edit-rating :hover
-{
-    text-decoration: underline;
 
+.star-widget label {
+  font-size: 20px;
+  color: #444;
+  padding: 0.5rem;
+  float: right;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
-.post
-{
-    display: none;
+.star-widget .starInput:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label {
+  color: rgb(238, 205, 57);
+}
+.star-widget .starInput:checked ~ label {
+  color: rgb(251, 153, 5);
+}
+.star-widget .starInput#rate-5:checked ~ label {
+  color: rgb(251, 153, 5);
+  text-shadow: 0px 2px 3px rgb(255, 247, 0);
+}
+.rate-us-form {
+  display: none;
+}
+.rate-us-form input {
+  width: 250px;
+}
+.star-widget .starInput:checked ~ .rate-us-form {
+  display: block;
+}
+
+.rate-us-form textarea {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.rate-us-form textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  font-size: 17px;
+  resize: none;
+}
+.rate-us-form .btn {
+  height: 45px;
+  width: 30%;
+  margin: 15px 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.edit-rating {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline;
+  background-color: #ff7700;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.post {
+  display: none;
 }

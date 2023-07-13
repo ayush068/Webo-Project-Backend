@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Order Page</title>
-       	        <!-- fontLink -->
-			<link rel="preconnect" href="https://fonts.googleapis.com">
-			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-			<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <!-- fontLink -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
     <!-- BootStrap Icon Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- bootstrap css link -->
@@ -55,13 +57,17 @@
 
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item aTag" href="#"><i class="bi iconInDropdown fw-bold pe-2  bi-person"></i> My
+                    <li><a class="dropdown-item aTag" href="#"><i class="bi iconInDropdown fw-bold pe-2  bi-person"></i>
+                            My
                             Profile</a></li>
-                    <li><a class="dropdown-item aTag" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-box2-heart"></i>
+                    <li><a class="dropdown-item aTag" href="#"><i
+                                class="bi iconInDropdown fw-bold pe-2 bi-box2-heart"></i>
                             Orders</a></li>
-                    <li><a class="dropdown-item aTag" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi bi-heart"></i>
+                    <li><a class="dropdown-item aTag" href="#"><i
+                                class="bi iconInDropdown fw-bold pe-2 bi bi-heart"></i>
                             Wishlist</a></li>
-                    <li><a class="dropdown-item aTag" href="#"><i class="bi iconInDropdown fw-bold pe-2 bi-emoji-smile"></i>
+                    <li><a class="dropdown-item aTag" href="#"><i
+                                class="bi iconInDropdown fw-bold pe-2 bi-emoji-smile"></i>
                             Help
                             Center</a></li>
                     <li><a class="dropdown-item aTag" href="#"><i
@@ -82,20 +88,20 @@
 
     <!-- Main Content -->
 
-    <div class="container my-orders d-flex flex-column">
+    <div class="container my-orders d-flex flex-column pt-2">
         <div class="d-flex flex-column orders-content orders">
             <div class="d-flex justify-content-evenly flex-wrap align-content-center">
                 <div class="productImg">
                     <img src="../static/f1.png"></img>
                 </div>
                 <div class="d-flex flex-column gap-3 ">
-                    <a href="#"><b>UBL Head Phone</b></a>
+                    <a href="#" class="aTag"><b>UBL Head Phone</b></a>
                     <p class="lh-sm">Rockerz 370 come equipped with latest Bluetooth v5.0 for instant wireless
                         connectivity
                     </p>
                     <p>
                         <b>Rs. 1700/- </b>
-                        <span class="px-3"> 2000/-</span>
+                        <span class="ps-1 text-body-tertiary">2000/-</span>
                     </p>
                 </div>
                 <div class="flex flex-col">
@@ -108,7 +114,7 @@
                             col-lg-12 col-xl-12 text-center p-0 mt-1 mb-1">
                         <div class="px-0 pt-2 pb-0 mt-1 mb-1">
                             <form id="form">
-                                <ul id="progressbar">
+                                <ul id="progressbar" class="ps-0">
                                     <li class="active" id="step1">
                                         <strong>Order Confirmed</strong>
                                     </li>
@@ -133,13 +139,13 @@
                         <img src="../static/f3.jpg"></img>
                     </div>
                     <div class="d-flex flex-column gap-3 ">
-                        <a href="#"><b>MIRAGE CEILING FAN</b></a>
+                        <a href="#" class="aTag"><b>MIRAGE CEILING FAN</b></a>
                         <p class="lh-sm">1200MM HIGH SPEED, 3 Blade, SMOKE BROWN
                             (5 YEARS WARRANTY)
                         </p>
                         <p>
                             <b>Rs. 1700/- </b>
-                            <span class="px-3"> 2000/-</span>
+                            <span class="ps-1 text-body-tertiary">2000/-</span>
                         </p>
                     </div>
                     <div class="d-flex flex-column justify-content-evenly">
@@ -148,34 +154,50 @@
                     </div>
                 </div>
                 <!-- Rate us butttons -->
-                <div class="rateUs-contents">
+                <div class="rateUs-contents mb-2">
                     <div class="post">
-                        <div class="thank-rating-text">Thanks for rating Us</div>
-                        <div class="edit-rating">
-                            Edit
+                        <div class="fw-semibold fs-1">Thanks for rating</div>
+                        <div class="edit-rating px-3 py-2 ">
+                            Edit Rating
                         </div>
                     </div>
-                    <div class="star-widget">
-                        <input type="radio" name="rate" id="rate-5">
+                    <form class="star-widget text-center">
+                        <p class="border-bottom">Rate this product</p>
+
+                        <input class="starInput" type="radio" name="rate" id="rate-5">
                         <label for="rate-5" class="bi bi-star-fill"></label>
-                        <input type="radio" name="rate" id="rate-4">
+                        <input class="starInput" type="radio" name="rate" id="rate-4">
                         <label for="rate-4" class="bi bi-star-fill"></label>
-                        <input type="radio" name="rate" id="rate-3">
+                        <input class="starInput" type="radio" name="rate" id="rate-3">
                         <label for="rate-3" class="bi bi-star-fill"></label>
-                        <input type="radio" name="rate" id="rate-2">
+                        <input class="starInput" type="radio" name="rate" id="rate-2">
                         <label for="rate-2" class="bi bi-star-fill"></label>
-                        <input type="radio" name="rate" id="rate-1">
+                        <input class="starInput" type="radio" name="rate" id="rate-1">
                         <label for="rate-1" class="bi bi-star-fill"></label>
-                        <form action="#" class="rate-us-form">
-                            <header></header>
-                            <div class="textarea">
-                                <textarea placeholder="Describe Your experince ..." cols="30" rows="3"></textarea>
-                            </div>
+
+
+
+                        <div action="#" class="rate-us-form">
+
+
+
+                                    <textarea placeholder="Describe Your experince..." cols="30" rows="3"></textarea>
+                                <h6 class="fw-1 pt-2 fs-5 text-decoration-underline"> Add Images</h6>
+                                <input class="bg-white  p-1" name="userfile" type="file"
+                                    accept="application/pdf,  image/jpeg" capture="camera" />
+                                    <input class="bg-white  p-1" name="userfile" type="file"
+                                    accept="application/pdf,  image/jpeg" capture="camera" />
+                                    <input class="bg-white  p-1" name="userfile" type="file"
+                                    accept="application/pdf,  image/jpeg" capture="camera" />
+                                    <input class="bg-white  p-1" name="userfile" type="file"
+                                    accept="application/pdf,  image/jpeg" capture="camera" />
+
                             <div class="btns">
-                                <button class="btn btn-danger"id="post-b" type="submit">Post</button>
+                                <button class="btn btn-danger" id="post-b" type="submit">Post</button>
                             </div>
-                        </form>
-                    </div>
+
+                        </div>
+                    </form>
                 </div>
             </div>
 
@@ -188,11 +210,11 @@
             </div>
             <div class="d-flex gap-3 customer-help">
                 <i class="bi bi-telephone-fill"></i>
-                <p><a href="tel:+4733378901">+47 333 78 901</a></p>
+                <p><a href="tel:8050010030" class="text-decoration-none">8050010030</a></p>
             </div>
             <div class="d-flex gap-3 customer-help">
                 <i class="bi bi-envelope-at-fill"></i>
-                <p><a href="mailto:wobo4u.com">wobo4u.com</a></p>
+                <p><a href="mailto:wobo4u.world" class="text-decoration-none">wobo4u.world</a></p>
             </div>
         </div>
 
